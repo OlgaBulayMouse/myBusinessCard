@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, white 20%, #726c40 60%)
+}
+
+main {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.start1 {
+    background: #eeede8;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #726c40;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.start2 {
+    background: #726c40;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+li:last-child {
+    margin-right: 0px;
+}
+
+a {
+    color: #eeede8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: khaki;
+    font-size: 20px;
+}
+
+h1 {
+    background: linear-gradient(to bottom right, white, #726c40);
+    color: #726c40;
+    font-size: 40px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+h2 {
+    color: #eeede8;
+}
+
+.info {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom right, white, #726c40);
+    color: #726c40;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.map_title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #726c40;
+    margin-bottom: 60px;
+}
+
+button {
+    width: 250px;
+    height: 70px;
+    background: #726c40;
+    color: #eeede8;
+    border-radius: 25px;
+    margin-bottom: 120px;
+    font-size: 20px;
+}
+
+.heart {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: start;
+    border-radius: 25px;
+}
+
+.heart_text-content {
+    position: absolute;
+    left: 350px;
+    background: linear-gradient(to bottom right, white, #726c40);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.my_foto {
+    margin-bottom: 60px;
+    width: 350px;
+}
+
+.ok {
+    width: 100px;
+}
+
