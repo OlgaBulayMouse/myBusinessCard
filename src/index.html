@@ -10,68 +10,134 @@
     <link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css'>
     <script src='/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
     <link rel='stylesheet' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800;900&family=Playfair+Display:ital,wght@0,500;1,600&family=Raleway:wght@500&family=Sofia+Sans:wght@400;700;1000&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <div class='start1'>Разработка Web контента</div>
-        <div class='start2'>
-            <div class='start2'>
-                <nav>
+    <header class='header'>
+        <div class='container'>
+            <div class='header__inner'>
+                <div class='header__logo'>
+                    <a href='#'>
+                        Разработка
+                        <span>Web контента</span>
+                    </a>
+                </div>
+                <nav class='header__menu'>
                     <ul>
-                        <li><a href='#'>ОБО МНЕ</a></li>
+                        <li class='header__drop-down drop-down'><a href='#'>ОБО МНЕ</a>
+                            <ul class='drop-down__list'>
+                                <li><a href="#">ff</a></li>
+                                <li><a href="#">kk</a></li>
+                                <li><a href="#">iii</a></li>
+                            </ul>
+                        </li>
                         <li><a href='#'>УСЛУГИ</a></li>
                         <li><a href='#'>КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
             </div>
-
+        </div>
     </header>
 
     <main>
         <section class='heart'>
             <section class='heart_text-content'>
-                <h1>Привлекайте на 40% больше<br> клиентов в бизнес без рекламы</h1>
-                <div class='info'>
-                    <p class='info_blok'>Создайте информационный сайт-визитку</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>
-                <div class='info'>
-                    <p class='info_blok'>Сайт сам расскажет подробности Вашего бизнеса</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>
-                <div class='info'>
-                    <p class='info_blok'>О Вас узнают не только пользователи Инстаграм))</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>
-                <div class='info'>
-                    <p class='info_blok'>Вас больше не будут отвлекать "пустые" звонки с расспросами о деталях</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>    
-                <div class='info'>
-                    <p class='info_blok'>Сайт познакомит потенциальных клиентов с Вашим делом</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>  
-                <div class='info'>
-                    <p class='info_blok'>Вам останется лишь принять заказ</p>
-                    <img class='ok' src='img/ok.png' alt='ok'>
-                </div>         
+                <h1>Создай информационный<br>сайт-визитку</h1>
+                <h2>Привлекай <span>на 40%</span> больше клиентов <br>в бизнес без рекламы</h1>
+                    <div class='info'>
+                        <p class='info_blok'>Сайт сам расскажет подробности Вашего бизнеса</p>
+                        <img class='ok' src='img/ok.png' alt='ok'>
+                    </div>
+                    <div class='info'>
+                        <p class='info_blok'>О Вас узнают не только пользователи Инстаграм))</p>
+                        <img class='ok' src='img/ok.png' alt='ok'>
+                    </div>
+                    <div class='info'>
+                        <p class='info_blok'>Больше не будут отвлекать "пустые" звонки<br> с расспросами о деталях</p>
+                        <img class='ok' src='img/ok.png' alt='ok'>
+                    </div>
+                    <div class='info'>
+                        <p class='info_blok'>Сайт познакомит потенциальных клиентов с Вашим делом</p>
+                        <img class='ok' src='img/ok.png' alt='ok'>
+                    </div>
+                    <div class='info'>
+                        <p class='info_blok'>Останется лишь принять заказ</p>
+                        <img class='ok' src='img/ok.png' alt='ok'>
+                    </div>
             </section>
+        </section class='contacts__inner'>
 
-            <img class='my_foto' src='img/без фона.png' alt='my foto'>
+        <section class='contacts'>
+            <div class='contacts__inner'>
+                <button>Заказать звонок</button>
+                <section class='my_contacts'>
+                </section>
+            </div>
         </section>
 
-        <section class='my_contacts'>
+        <section class='articles'>
+            <div class="articles__inner">
+                <div class='article'>
+                    <div class='article__title'>
+                        <h3>gggggggggg</h3>
+                        <img src='./img/logo.png' width='90px'>
+                    </div>
+                    <div class='article__text'>
+                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
+                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
+                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                    </div>
+                </div>
 
+                <div class='article'>
+                    <div class='article__title'>
+                        <h3>gggggggggg</h3>
+                        <img src='./img/logo.png' width='90px'>
+                    </div>
+                    <div class='article__text'>
+                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
+                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
+                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                    </div>
+                </div>
+
+                <div class='article'>
+                    <div class='article__title'>
+                        <h3>gggggggggg</h3>
+                        <img src='./img/logo.png' width='90px'>
+                    </div>
+                    <div class='article__text'>
+                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
+                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
+                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                    </div>
+                </div>
+
+                <div class='article'>
+                    <div class='article__title'>
+                        <h3>gggggggggg</h3>
+                        <img src='./img/logo.png' width='90px'>
+                    </div>
+                    <div class='article__text'>
+                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
+                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
+                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <button>Заказать звонок</button>
 
         <section class='map'>
             <h3 class='map_title'>Как меня найти</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.3799479691643!2d23.808734745940743!3d53.70538722189432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e078b9c6825ead%3A0x2189c2e0c98a2630!2zS3VyY2hhdG92YSAxMSwg0JPRgNC-0LTQvdC-!5e1!3m2!1sru!2sby!4v1678285995017!5m2!1sru!2sby"
-                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
@@ -79,6 +145,7 @@
             <div class='review'></div>
         </section>
     </main>
+
     <footer>
         <section class='footer_contacts'>
         </section>
@@ -86,6 +153,7 @@
             <button>Заказать звонок</button>
         </section>
     </footer>
+
 </body>
 
 </html>
