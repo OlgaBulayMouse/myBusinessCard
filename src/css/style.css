@@ -37,7 +37,7 @@ body {
 
 main {
     max-width: 1030px;
-    margin: 0 auto;
+    margin: 0 20px auto auto;
     padding: 0 15px;
 }
 
@@ -91,6 +91,7 @@ main {
     font-family: 'Sofia Sans', sans-serif;
     height: 100px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     border-radius: 25px;
 
@@ -177,19 +178,8 @@ h2 span {
 
 h3 {
     color: #413c0d;
+    text-align: center;
 }
-
-.map {
-    display: flex;
-    flex-direction: column;
-}
-
-.map_title {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
 
 .heart_text-content {
     display: flex;
@@ -197,7 +187,6 @@ h3 {
     align-items: flex-end;
     border-radius: 25px;
 }
-
 
 .info {
     display: flex;
@@ -228,6 +217,25 @@ button {
     color: #eeede8;
     border-radius: 25px;
     font-size: 20px;
+    margin-right: 15px;
+}
+
+.my_contacts_phone {
+    position: relative;
+}
+
+#message {
+    position: absolute;
+    bottom: -30px;
+    background-color:#726c40;
+
+}
+
+#phone {
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
 }
 
 .contacts {
@@ -242,15 +250,20 @@ button {
 
 }
 
-.my_contacts {
-    background: red;
-    width: 20px;
+.my_contacts__container {
+    display: flex;
+    align-items: center;
+}
+
+.my_contacts__logo {
+    padding: 0 15px 0 0;
+
 }
 
 .articles__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     border-radius: 25%;
 }
 
@@ -259,23 +272,46 @@ button {
     color: #413c0d;
     border-radius: 25%;
     font-size: 20px;
-    width: 250px;
+    width: 400px;
     padding: 15px;
     line-height: 30px;
     text-align: justify;
-    margin: 30px;
+    margin: 15px;
+    margin-bottom: 50px;
 }
 
 .article__title {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10px;
     font-family: 'Playfair Display', serif;
     align-items: center;
 }
 
+.article__img {
+    border-radius: 100%;
+    margin-right: 35px;
+    width: 105px;
+    height: 120px;
+}
+
 .article__text {
     padding: 10px;
 
+}
+
+
+.map {
+    display: flex;
+    flex-direction: column;
+}
+
+.map_title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: start;
+    font-family: 'Playfair Display', serif;
+    color: #413c0d;
 }

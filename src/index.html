@@ -6,7 +6,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Веб-разработка и создание сайтов</title>
-    <meta name='description' content='Сайты, веб-страницы, разработка с нуля, дизайн, продвижение SEO'>
+    <meta name='description'
+        content='Сайты, веб-страницы, создание сайтов, разработка с нуля, web-дизайн, продвижение SEO'>
     <link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css'>
     <script src='/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
     <link rel='stylesheet' href='css/style.css'>
@@ -15,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800;900&family=Playfair+Display:ital,wght@0,500;1,600&family=Raleway:wght@500&family=Sofia+Sans:wght@400;700;1000&display=swap"
         rel="stylesheet">
+    <script src='../src/js/index.js'></script>
 
 </head>
 
@@ -30,15 +32,17 @@
                 </div>
                 <nav class='header__menu'>
                     <ul>
-                        <li class='header__drop-down drop-down'><a href='#'>ОБО МНЕ</a>
+                        <li class='header__drop-down drop-down'><a href='#'>ПОЛЕЗНЫЕ СТАТЬИ</a>
                             <ul class='drop-down__list'>
-                                <li><a href="#">ff</a></li>
-                                <li><a href="#">kk</a></li>
-                                <li><a href="#">iii</a></li>
+                                <li><a href="#">Программист или конструктор?</a></li>
+                                <li><a href="#">SEO или почему сайт не работает?</a></li>
+                                <li><a href="#">Как работают поисковые системы?</a></li>
+                                <li><a href="#">Не мусори на сайте!</a></li>
+
                             </ul>
                         </li>
-                        <li><a href='#'>УСЛУГИ</a></li>
-                        <li><a href='#'>КОНТАКТЫ</a></li>
+                        <li><a href='#'>КОНТАКТЫ</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -71,12 +75,28 @@
                         <img class='ok' src='img/ok.png' alt='ok'>
                     </div>
             </section>
-        </section class='contacts__inner'>
+        </section>
 
         <section class='contacts'>
             <div class='contacts__inner'>
                 <button>Заказать звонок</button>
                 <section class='my_contacts'>
+                    <div class='my_contacts__container'>
+                        <div class='my_contacts_phone'>
+                            <button id='phone'>
+                                <img class='my_contacts__logo' src='../src/img/icons телефон.png' width='64px'>
+                            </button>
+                            <div id='message'>
+                        
+                            </div>
+                        </div>
+                        <a href='https://www.instagram.com/olga_bulay_mouse/'><img class='my_contacts__logo'
+                                src='../src/img/icons instagram.png' width='50px' height='50px'></a>
+                        <a href='https://www.instagram.com/programmer_web_olga/'><img class='my_contacts__logo'
+                                src='../src/img/icons instagram.png' width='50px' height='50px'></a>
+                        <a href='https://www.facebook.com/profile.php?id=100088871576434&mibextid=ZbWKwL'><img
+                                class='my_contacts__logo' src='../src/img/icons facebook.png' width='64px'> </a>
+                    </div>
                 </section>
             </div>
         </section>
@@ -85,56 +105,86 @@
             <div class="articles__inner">
                 <div class='article'>
                     <div class='article__title'>
-                        <h3>gggggggggg</h3>
-                        <img src='./img/logo.png' width='90px'>
+                        <h3>Программист<br> или<br> конструктор?</h3>
+                        <img class='article__img' src='./img/IMG_7816.JPG'>
                     </div>
                     <div class='article__text'>
-                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
-                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
-                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                        <p>Предприниматели, решившие создать сайт, задаются вопросом: "Какой сайт лучше
+                            выбрать&#128527;? Созданный на конструкторе или написанный вручную программистом?
+                            Конечно, ручная работа требует большей оплаты и больших сроков изготовления.
+                            Существует много мнений и споров на эту тему, но для меня главный недостаток сайта,
+                            созданного на конструкторе - это то, что Вы не
+                            являетесь владельцем своего сайта и его содержимого, не имеете
+                            доступа к программному коду, лишены возможности
+                            развивать свой сайт по своему усмотрению, не можете сохранить файлы с его
+                            содержимым на свой компьютер&#128532;.
+                            Вы лишь арендуете его в облаке у провайдера, который предоставляет Вам свои услуги. И, если
+                            с провайдером что-то случается, Ваш проект будет потерян&#128534;&#128534;&#128534;&#10071;
+                        </p>
                     </div>
                 </div>
 
                 <div class='article'>
                     <div class='article__title'>
-                        <h3>gggggggggg</h3>
-                        <img src='./img/logo.png' width='90px'>
+                        <h3>SEO<br> или почему<br> сайт не работает?</h3>
+                        <img class='article__img' src='./img/seo.jpg'>
                     </div>
                     <div class='article__text'>
-                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
-                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
-                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                        <p>Нет клиентов? Поисковики не ищут? Или не находят? Все просто: САЙТ ИЗНАЧАЛЬНО НЕ ПРОДУМАН под
+                            поисковые системы.
+                            Затачивание контента под ключевые поисковые запросы - крайне важный этап создания сайта.
+                            SEO - это целая наука, изучающая работу поисковых систем Google, Яндекс и способы, как
+                            добиться максимально высокого ранжирования сайта в поисковых выдачах.
+                            Одна из главных задач при создании сайта - правильно построить внутреннюю структуру
+                            (внутренний скелет "под капотом" сайта), прописать в коде нужные для поисковиков теги и
+                            ключевые слова.
+                            Делайте изначально свой сайт грамотно, чтобы потом не искать специалистов для
+                            переделки&#129303;
+                            &#129303;
+                            &#129303;
+                        </p>
                     </div>
                 </div>
 
                 <div class='article'>
                     <div class='article__title'>
-                        <h3>gggggggggg</h3>
-                        <img src='./img/logo.png' width='90px'>
+                        <h3>Как работают поисковые системы?</h3>
+                        <img class='article__img' src='./img/бот.png'>
                     </div>
                     <div class='article__text'>
-                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
-                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
-                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                        <p>Процесс посещения сайта роботом и занесения информации о нем в специальную базу поисковых
+                            систем, из которой потом выдается информация по Вашему запросу называется ИНДЕКСАЦИЕЙ.
+                            Индекс хранит список слов для каждого документа. Поэтому крайне ВАЖНО грамотно составить
+                            текстовый контент сайта, чтобы Google-Яндекс ботики не пробегали мимо&#128540;
+                            !
+                        </p>
                     </div>
                 </div>
 
                 <div class='article'>
                     <div class='article__title'>
-                        <h3>gggggggggg</h3>
-                        <img src='./img/logo.png' width='90px'>
+                        <h3>Не мусори на сайте!</h3>
+                        <img class='article__img' src='./img/метла2.png'>
                     </div>
                     <div class='article__text'>
-                        <p>kjhgkjdhkdjhkdkfkjhjnbjkhn
-                            dfnkhjnfgxjmdnjhnxdn,X-UA-Compatible,dfngdjkhgjmd
-                            z,fgbjdgmzdgvmdxjjfjgjdfg</p>
+                        <p>Неряшливый код. Грязный код.&#128169
+                            Конструкторы сайтов имеют запутанный мусорный код, содержат много лишнего.
+                            Это плата за простоту универсального редактора блоков. Гугло-Яндексу не нравится такой
+                            код&#128533;
+                            . Это замедляет Seo продвижение.
+                            Поисковые роботы любят строгий четкий порядок в структуре сайта "под капотом" и когда они
+                            его не находят - такой сайт пропускают, проходят мимо
+                            и в поиске не показывают&#129317;
+                            .</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class='map'>
-            <h3 class='map_title'>Как меня найти</h3>
+            <div class='map_title'>
+                Как меня найти
+            </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.3799479691643!2d23.808734745940743!3d53.70538722189432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e078b9c6825ead%3A0x2189c2e0c98a2630!2zS3VyY2hhdG92YSAxMSwg0JPRgNC-0LTQvdC-!5e1!3m2!1sru!2sby!4v1678285995017!5m2!1sru!2sby"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
