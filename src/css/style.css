@@ -51,7 +51,6 @@ main {
     align-items: flex-end;
     justify-content: flex-end;
     border-radius: 25px;
-    margin-bottom: 20px;
 }
 
 .header {
@@ -86,7 +85,6 @@ main {
     font-weight: 600;
 }
 
-
 .header__menu {
     font-family: 'Sofia Sans', sans-serif;
     height: 100px;
@@ -94,54 +92,39 @@ main {
     justify-content: center;
     flex-direction: column;
     border-radius: 25px;
-
-}
-
-.header__drop-down>a {
-    position: relative;
-}
-
-.header__drop-down>a::after {
-    content: '';
-    position: absolute;
-    background-image: url(../img/ok.png);
-    width: 7px;
-    height: 5px;
 }
 
 .header__drop-down {
     position: relative;
-}
+    display: inline-block;
+} 
 
-.header__drop-down>a:hover+.drop-down__list {
+.header__drop-down:hover .drop-down__list {
     display: block;
-}
+} 
 
 .drop-down__list {
-    display: none;
+    display: none; 
     position: absolute;
     width: 200px;
-    top: 30px;
+    top: 20px;
     left: -16px;
     background: #726c40;
     box-shadow: 0px 5px 0px 0px black;
-    padding: 10px 5px;
-}
-
-.drop-down__list a {
-    padding: 12px 0 12px 11px;
-}
-
-.drop-down__list li+li a {
-    border-top: 1px solid #000;
-}
-
-ul {
-    list-style: none;
     margin: 0px;
     padding: 5px;
     border-radius: 25px;
 }
+
+.drop-down__list a {
+    padding: 12px 0 12px 11px;
+    display: list-item;
+    list-style: none;
+}
+
+.drop-down__list li + li a {
+    border-top: 1px solid #000;
+} 
 
 li {
     display: flex;
@@ -226,9 +209,14 @@ button {
 
 #message {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
+    left: -40px;
     background-color:#726c40;
-
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #eeede8;
+    border: 1px solid black;
 }
 
 #phone {
@@ -239,20 +227,15 @@ button {
 }
 
 .contacts {
-    margin-bottom: 20px;
-}
-
-.contacts__inner {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-
+    align-items: flex-ends;
+    justify-content:space-between;
 }
 
-.my_contacts__container {
-    display: flex;
-    align-items: center;
+.my_contacts_inst {
+    padding: 5px;
 }
 
 .my_contacts__logo {
@@ -301,12 +284,6 @@ button {
 
 }
 
-
-.map {
-    display: flex;
-    flex-direction: column;
-}
-
 .map_title {
     font-size: 25px;
     font-weight: 600;
@@ -314,4 +291,8 @@ button {
     text-align: start;
     font-family: 'Playfair Display', serif;
     color: #413c0d;
+}
+
+footer {
+    background: rgb(71, 43, 5);
 }
