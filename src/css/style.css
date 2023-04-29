@@ -28,7 +28,6 @@ body {
 }
 
 .container {
-    background: linear-gradient(to bottom right, white 20%, #726c40 60%);
     max-width: 1030px;
     margin: 0 auto;
     padding: 0 15px;
@@ -37,8 +36,6 @@ body {
 
 main {
     max-width: 1030px;
-    margin: 0 20px auto auto;
-    padding: 0 15px;
 }
 
 .heart {
@@ -243,10 +240,10 @@ button {
 
 }
 
-.articles__inner {
+.articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     border-radius: 25%;
 }
 
@@ -288,11 +285,137 @@ button {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 30px;
-    text-align: start;
+    display: flex;
+    align-items: center;
     font-family: 'Playfair Display', serif;
     color: #413c0d;
 }
 
 footer {
-    background: rgb(71, 43, 5);
+    background: linear-gradient(to bottom right, white 20%, #726c40 60%);
+}
+
+@media screen and (max-width: 1200px) {
+    .info {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .header__logo a {
+        font-size: 25px;
+    }
+    .header__logo a span {
+        font-size: 35px;
+    }
+    h2 span {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+     .info {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .header__logo a {
+        font-size: 20px;
+    }
+    .header__logo a span {
+        font-size: 30px;
+    }
+    .header__drop-down a {
+        font-size: 16px;
+    }
+    h2 span {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .header__logo a {
+        font-size: 15px;
+    }
+    .header__logo a span {
+        font-size: 25px;
+    }
+    .header__drop-down a {
+        font-size: 14px;
+    }
+    h2 span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .header__logo a {
+        font-size: 10px;
+    }
+    .header__logo a span {
+        font-size: 20px;
+    }
+    .header__drop-down a {
+        font-size: 12px;
+    }
+    .header__logo {
+        flex-direction: column;
+    }
+    h2 span {
+        font-size: 35px;
+    }
+    
+}
+
+
+@media screen and (max-width: 390px) {
+    .info {
+        font-size: 5px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .header__logo a {
+        font-size: 5px;
+    }
+    .header__logo a span {
+        font-size: 15px;
+    }
+    .header__drop-down a {
+        font-size: 10px;
+    }
+    .header__logo {
+        flex-direction: column;
+    }
+    h2 span {
+        font-size: 25px;
+    }
 }
